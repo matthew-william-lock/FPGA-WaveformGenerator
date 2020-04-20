@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim waveformGen_tb_behav -key {Behavioral:sim_1:Functional:waveformGen_tb} -tclbatch waveformGen_tb.tcl -log simulate.log
+ExecStep $xv_path/bin/xsim blockmemory_tb_behav -key {Behavioral:sim_1:Functional:blockmemory_tb} -tclbatch blockmemory_tb.tcl -log simulate.log

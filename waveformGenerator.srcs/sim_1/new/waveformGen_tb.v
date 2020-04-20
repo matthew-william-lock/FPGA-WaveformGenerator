@@ -21,24 +21,4 @@
 
 
 module waveformGen_tb;
-
-    reg  CLK100MHZ_tb;
-    
-    waveformGen gen(
-        .CLK100MHZ(CLK100MHZ_tb)
-    );
-    
-    initial begin
-    
-    $display("\t\ttime,\tCLK100MHZ_tb");
-    $monitor("%d",CLK100MHZ_tb);
-    
-    CLK100MHZ_tb=0; #10;
-    CLK100MHZ_tb=1; #10;
-    CLK100MHZ_tb=0; #10;
-    CLK100MHZ_tb=1; #10;
-    
-    
-    end
-
 endmodule
