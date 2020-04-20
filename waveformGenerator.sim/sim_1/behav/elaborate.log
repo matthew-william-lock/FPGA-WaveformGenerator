@@ -1,0 +1,13 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.2/bin/unwrapped/lnx64.o/xelab -wto dbb62db1838a4d24ad916fb87cd20dbe --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot waveformGen_tb_behav xil_defaultlib.waveformGen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.waveformGen
+Compiling module xil_defaultlib.waveformGen_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot waveformGen_tb_behav
