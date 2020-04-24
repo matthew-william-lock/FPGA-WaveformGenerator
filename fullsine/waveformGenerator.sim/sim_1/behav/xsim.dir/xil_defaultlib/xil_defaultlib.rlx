@@ -1,0 +1,9 @@
+0.6
+2017.2
+Jun 15 2017
+18:41:53
+/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.sim/sim_1/behav/glbl.v,1497407496,verilog,,,,glbl,,,,,,,,
+/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sim_1/new/blockmemory_tb.v,1587478457,verilog,,,,blockmemory_tb,,,,,,,,
+/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1587384535,verilog,,,,blk_mem_gen_0,,,,,,,,
+/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/PWM.v,1587479387,verilog,,,,pwm_module,,,,,,,,
+/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/waveformGen.v,1587563467,verilog,,,,waveformGen,,,,,,,,
