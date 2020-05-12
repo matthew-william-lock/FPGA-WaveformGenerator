@@ -1,0 +1,68 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Tue May 12 20:26:47 2020
+| Host         : linux running 64-bit Ubuntu 18.04.4 LTS
+| Command      : report_control_sets -verbose -file arpeggiator_control_sets_placed.rpt
+| Design       : arpeggiator
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     5 |
+| Unused register locations in slices containing registers |    18 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           11 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              39 |           10 |
+| Yes          | No                    | No                     |              19 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------+----------------+------------------------+------------------+----------------+
+|     Clock Signal     |  Enable Signal |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
++----------------------+----------------+------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG | addra          |                        |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | pwm_mod/p_0_in |                        |                2 |             11 |
+|  CLK100MHZ_IBUF_BUFG |                | addra                  |                3 |             13 |
+|  CLK100MHZ_IBUF_BUFG |                | note_switch[0]_i_1_n_0 |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG |                |                        |               11 |             36 |
++----------------------+----------------+------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 8      |                     1 |
+| 11     |                     1 |
+| 13     |                     1 |
+| 16+    |                     2 |
++--------+-----------------------+
+
+
