@@ -24,7 +24,6 @@ module arpeggiator(
     input  CLK100MHZ,
     input [7:0] SW,
     input ARP_ON,
-    input BTNL,
     output AUD_PWM, 
     output AUD_SD,
     output [2:0] LED
@@ -70,32 +69,72 @@ module arpeggiator(
    
     reg [12:0] clkdiv = 0;
     reg [1:0] phase = 0;
+    reg [0:0] rep = 0;
+    reg [1:0] return;
     
     function [1:0] determineAddra ; // Determine which address to play according to state of the phase
         input [1:0] phasein;
+        
+        begin
+        
         case (phasein)
                    
-            2'b00: begin
-                addra = addra +1;
-                if(addra>=62) phase=phase+1'b1;
+            2'b00: begin                    
+                if (!rep) addra = addra +1;
+                if(addra>=63) begin
+                    if (!rep) begin
+                        rep=1'b1;
+                    end
+                    else begin
+                        phase=phase+1'b1;
+                        rep=1'b0;
+                    end
+                end               
             end
             
-            2'b01: begin
-                addra = addra -1;
-                if(addra==1) phase=phase+1'b1;
+            2'b01: begin         
+                if (!rep) addra = addra -1;
+                if(addra<=0) begin
+                    if (!rep) begin
+                        rep=1'b1;
+                    end
+                    else begin
+                        phase=phase+1'b1;
+                        rep=1'b0;
+                    end
+                end               
             end
             
-            2'b10: begin
-                addra = addra +1;
-                if(addra>=62) phase=phase+1'b1;
+            2'b10: begin               
+                if (!rep) addra = addra +1;
+                if(addra>=63) begin
+                    if (!rep) begin
+                        rep=1'b1;
+                    end
+                    else begin
+                        phase=phase+1'b1;
+                        rep=1'b0;
+                    end
+                end                
             end
             
-            2'b11: begin
-                addra = addra -1;
-                if(addra==1) phase=phase+1'b1;
+            2'b11: begin          
+            if (!rep) addra = addra -1;
+                if(addra<=0) begin
+                    if (!rep) begin
+                        rep=1'b1;
+                    end
+                    else begin
+                        phase=phase+1'b1;
+                        rep=1'b0;
+                    end
+                end            
             end
           
           endcase
+          
+        determineAddra = 2'b01;
+        end
     endfunction
    
    always @(posedge CLK100MHZ) begin   
@@ -133,35 +172,35 @@ module arpeggiator(
             0: begin
                 if (clkdiv >= f_base) begin
                     clkdiv[12:0] <= 0;
-                    determineAddra(phase);
+                    return<=determineAddra(phase);
                 end                              
             end
             
             1: begin
                 if (clkdiv >= f_base/5*4) begin
                     clkdiv[12:0] <= 0;
-                    determineAddra(phase);
+                    return<=determineAddra(phase);
                 end            
             end 
             
             2: begin
                 if (clkdiv >= f_base/3*2) begin
                     clkdiv[12:0] <= 0;
-                    determineAddra(phase);
+                    return<=determineAddra(phase);
                 end            
             end
             
             3: begin
                 if (clkdiv >= f_base/2) begin
                     clkdiv[12:0] <= 0;
-                    determineAddra(phase);
+                    return<=determineAddra(phase);
                 end            
             end
             
             4: begin
                 if (clkdiv >= 1493) begin
                     clkdiv[12:0] <= 0;
-                    determineAddra(phase);
+                    return<=determineAddra(phase);
                 end                              
             end
             
@@ -169,7 +208,7 @@ module arpeggiator(
             default: begin
                 if (clkdiv >= 1493) begin
                     clkdiv[12:0] <= 0;
-                    determineAddra(phase);
+                    return<=determineAddra(phase);
                 end                              
             end
         

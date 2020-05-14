@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date                      : Thu May 14 12:11:17 2020
+| Date                      : Thu May 14 16:37:46 2020
 | Host                      : linux running 64-bit Ubuntu 18.04.4 LTS
 | Command                   : report_io -file arpeggiator_io_placed.rpt
 | Design                    : arpeggiator
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            16 |
+|            15 |
 +---------------+
 
 
@@ -285,7 +285,7 @@ Table of Contents
 | P14        |             | High Range | IO_L8N_T1_D12_14             | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | P15        |             | High Range | IO_L13P_T2_MRCC_14           | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | P16        |             | High Range | VCCO_14                      | VCCO        |             |      14 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
-| P17        | BTNL        | High Range | IO_L12P_T1_MRCC_14           | INPUT       | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
+| P17        |             | High Range | IO_L12P_T1_MRCC_14           | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | P18        |             | High Range | IO_L9N_T1_DQS_D13_14         | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | R1         |             | High Range | IO_L17P_T2_34                | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
 | R2         |             | High Range | IO_L15N_T2_DQS_34            | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
