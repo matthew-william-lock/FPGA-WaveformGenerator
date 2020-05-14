@@ -29,12 +29,18 @@ module blockmemory_tb;
     reg ena=1;
     reg wea=0;
     reg [7:0]addra=0;
-    reg [10:0]dina;
+    reg [10:0]dina=0;
     
     wire [10:0]douta;
     
+
+    reg AUD_PWM;
+    reg AUD_SD;
+    
     waveformGen gen(
-        .CLK100MHZ(CLK100MHZ_tb)
+        .CLK100MHZ(CLK100MHZ_tb),
+        .AUD_PWM(AUD_PWM),
+        .AUD_SD(AUD_SD)
     );
     
     blk_mem_gen_0 bram (

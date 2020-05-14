@@ -14,32 +14,19 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 32562 
+INFO: Helper process launched with PID 22619 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1189.469 ; gain = 67.000 ; free physical = 1199 ; free virtual = 4369
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1189.469 ; gain = 67.000 ; free physical = 893 ; free virtual = 7032
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'waveformGen' [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/waveformGen.v:23]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.runs/synth_1/.Xil/Vivado-32555-linux/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (1#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.runs/synth_1/.Xil/Vivado-32555-linux/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'pwm_module' [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/PWM.v:23]
-INFO: [Synth 8-256] done synthesizing module 'pwm_module' (2#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/PWM.v:23]
-WARNING: [Synth 8-3848] Net LED in module/entity waveformGen does not have driver. [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/waveformGen.v:29]
-INFO: [Synth 8-256] done synthesizing module 'waveformGen' (3#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/waveformGen.v:23]
+INFO: [Synth 8-638] synthesizing module 'waveformGen' [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/waveformGen.v:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.runs/synth_1/.Xil/Vivado-22610-linux/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (1#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.runs/synth_1/.Xil/Vivado-22610-linux/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'pwm_module' [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/PWM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'pwm_module' (2#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/PWM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'waveformGen' (3#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/waveformGen.v:23]
 WARNING: [Synth 8-3917] design waveformGen has port AUD_SD driven by constant 1
-WARNING: [Synth 8-3331] design waveformGen has unconnected port LED[2]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port LED[1]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port LED[0]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[7]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[6]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[5]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[4]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[3]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[2]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[1]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[0]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port BTNL
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1229.969 ; gain = 107.500 ; free physical = 1211 ; free virtual = 4381
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1229.969 ; gain = 107.500 ; free physical = 904 ; free virtual = 7043
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -49,48 +36,50 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1229.969 ; gain = 107.500 ; free physical = 1211 ; free virtual = 4382
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1229.969 ; gain = 107.500 ; free physical = 905 ; free virtual = 7044
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.runs/synth_1/.Xil/Vivado-32555-linux/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'bram'
-Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.runs/synth_1/.Xil/Vivado-32555-linux/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'bram'
-Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/constrs_1/new/constraints.xdc]
-Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/constrs_1/new/constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/waveformGen_propImpl.xdc].
+Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.runs/synth_1/.Xil/Vivado-22610-linux/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'bram'
+Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.runs/synth_1/.Xil/Vivado-22610-linux/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'bram'
+Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/constrs_1/new/constraints.xdc:10]
+Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/constrs_1/new/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/waveformGen_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/waveformGen_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/waveformGen_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1575.445 ; gain = 0.000 ; free physical = 966 ; free virtual = 4137
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1575.445 ; gain = 0.000 ; free physical = 658 ; free virtual = 6797
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 1043 ; free virtual = 4213
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 732 ; free virtual = 6871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 1043 ; free virtual = 4213
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 734 ; free virtual = 6873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for bram. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 1044 ; free virtual = 4215
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 734 ; free virtual = 6873
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element PWM_ramp_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/PWM.v:33]
-WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/waveformGen.v:67]
-WARNING: [Synth 8-6014] Unused sequential element addra_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/waveformGen.v:44]
+WARNING: [Synth 8-6014] Unused sequential element PWM_ramp_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/PWM.v:33]
+WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/waveformGen.v:64]
+WARNING: [Synth 8-6014] Unused sequential element addra_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/waveformGen.v:41]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 1035 ; free virtual = 4206
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 727 ; free virtual = 6866
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -145,24 +134,12 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element pwm_mod/PWM_ramp_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/PWM.v:33]
-WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/waveformGen.v:67]
-WARNING: [Synth 8-6014] Unused sequential element addra_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/waveformGen.v:44]
+WARNING: [Synth 8-6014] Unused sequential element pwm_mod/PWM_ramp_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/PWM.v:33]
+WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/waveformGen.v:64]
+WARNING: [Synth 8-6014] Unused sequential element addra_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/waveformGen.v:41]
 WARNING: [Synth 8-3917] design waveformGen has port AUD_SD driven by constant 1
-WARNING: [Synth 8-3331] design waveformGen has unconnected port LED[2]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port LED[1]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port LED[0]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[7]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[6]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[5]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[4]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[3]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[2]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[1]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port SW[0]
-WARNING: [Synth 8-3331] design waveformGen has unconnected port BTNL
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 1025 ; free virtual = 4196
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 716 ; free virtual = 6855
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -174,13 +151,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 903 ; free virtual = 4073
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 593 ; free virtual = 6732
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 900 ; free virtual = 4070
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 591 ; free virtual = 6730
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -192,7 +169,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 900 ; free virtual = 4070
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 590 ; free virtual = 6729
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -216,7 +193,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 900 ; free virtual = 4071
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 591 ; free virtual = 6730
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -229,7 +206,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 900 ; free virtual = 4071
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 591 ; free virtual = 6730
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -241,25 +218,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 900 ; free virtual = 4071
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 591 ; free virtual = 6730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 900 ; free virtual = 4071
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 591 ; free virtual = 6730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 900 ; free virtual = 4071
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 591 ; free virtual = 6730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 900 ; free virtual = 4071
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 591 ; free virtual = 6730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -288,22 +265,21 @@ Report Cell Usage:
 |10    |FDRE          |    55|
 |11    |IBUF          |     1|
 |12    |OBUF          |     2|
-|13    |OBUFT         |     3|
 +------+--------------+------+
 
 Report Instance Areas: 
 +------+----------+-----------+------+
 |      |Instance  |Module     |Cells |
 +------+----------+-----------+------+
-|1     |top       |           |   131|
+|1     |top       |           |   128|
 |2     |  pwm_mod |pwm_module |    52|
 +------+----------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 900 ; free virtual = 4071
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 591 ; free virtual = 6730
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1575.445 ; gain = 107.500 ; free physical = 954 ; free virtual = 4124
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 954 ; free virtual = 4124
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1575.445 ; gain = 107.500 ; free physical = 645 ; free virtual = 6784
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1575.445 ; gain = 452.977 ; free physical = 644 ; free virtual = 6783
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -312,9 +288,9 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-17 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+17 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1577.461 ; gain = 471.574 ; free physical = 923 ; free virtual = 4094
-INFO: [Common 17-1381] The checkpoint '/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.runs/synth_1/waveformGen.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1601.473 ; gain = 0.000 ; free physical = 924 ; free virtual = 4094
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 15:51:39 2020...
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1583.453 ; gain = 477.566 ; free physical = 616 ; free virtual = 6755
+INFO: [Common 17-1381] The checkpoint '/home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.runs/synth_1/waveformGen.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1607.465 ; gain = 0.000 ; free physical = 616 ; free virtual = 6755
+INFO: [Common 17-206] Exiting Vivado at Thu May 14 12:25:24 2020...

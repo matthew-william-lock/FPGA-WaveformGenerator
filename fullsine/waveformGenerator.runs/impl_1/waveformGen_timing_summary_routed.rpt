@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date         : Wed Apr 22 15:52:22 2020
-| Host         : linux running 64-bit Ubuntu 18.04.3 LTS
+| Date         : Thu May 14 12:26:06 2020
+| Host         : linux running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file waveformGen_timing_summary_routed.rpt -rpx waveformGen_timing_summary_routed.rpx
 | Design       : waveformGen
 | Device       : 7a100t-csg324
@@ -126,7 +126,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      6.105        0.000                      0                  107        0.164        0.000                      0                  107        4.500        0.000                       0                    58  
+      5.761        0.000                      0                  107        0.164        0.000                      0                  107        4.500        0.000                       0                    58  
 
 
 All user specified timing constraints are met.
@@ -149,7 +149,7 @@ sys_clk_pin  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-sys_clk_pin         6.105        0.000                      0                  107        0.164        0.000                      0                  107        4.500        0.000                       0                    58  
+sys_clk_pin         5.761        0.000                      0                  107        0.164        0.000                      0                  107        4.500        0.000                       0                    58  
 
 
 ------------------------------------------------------------------------------------------------
@@ -180,7 +180,7 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  sys_clk_pin
   To Clock:  sys_clk_pin
 
-Setup :            0  Failing Endpoints,  Worst Slack        6.105ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        5.761ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.164ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
@@ -188,7 +188,7 @@ PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Vio
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             6.105ns  (required time - arrival time)
+Slack (MET) :             5.761ns  (required time - arrival time)
   Source:                 pwm_mod/PWM_ramp_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ENBWREN
@@ -196,7 +196,7 @@ Slack (MET) :             6.105ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        3.407ns  (logic 1.154ns (33.867%)  route 2.253ns (66.133%))
+  Data Path Delay:        3.752ns  (logic 1.152ns (30.701%)  route 2.600ns (69.299%))
   Logic Levels:           2  (LUT4=2)
   Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.961ns = ( 14.961 - 10.000 ) 
@@ -221,11 +221,11 @@ Slack (MET) :             6.105ns  (required time - arrival time)
     SLICE_X10Y137        FDRE                                         r  pwm_mod/PWM_ramp_reg[2]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X10Y137        FDRE (Prop_fdre_C_Q)         0.478     5.707 r  pwm_mod/PWM_ramp_reg[2]/Q
-                         net (fo=9, routed)           0.875     6.583    pwm_mod/PWM_ramp_reg__0[2]
-    SLICE_X9Y137         LUT4 (Prop_lut4_I0_O)        0.323     6.906 r  pwm_mod/PWM_ramp[3]_i_1/O
-                         net (fo=5, routed)           0.897     7.803    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/pwropt_2
-    SLICE_X8Y137         LUT4 (Prop_lut4_I1_O)        0.353     8.156 r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_ENBWREN_cooolgate_en_gate_3/O
-                         net (fo=1, routed)           0.481     8.637    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_ENBWREN_cooolgate_en_sig_2
+                         net (fo=9, routed)           1.222     6.929    pwm_mod/PWM_ramp_reg__0[2]
+    SLICE_X9Y137         LUT4 (Prop_lut4_I0_O)        0.321     7.250 r  pwm_mod/PWM_ramp[3]_i_1/O
+                         net (fo=5, routed)           0.897     8.147    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/pwropt_2
+    SLICE_X8Y137         LUT4 (Prop_lut4_I1_O)        0.353     8.500 r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_ENBWREN_cooolgate_en_gate_3/O
+                         net (fo=1, routed)           0.481     8.982    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_ENBWREN_cooolgate_en_sig_2
     RAMB18_X0Y54         RAMB18E1                                     r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ENBWREN
   -------------------------------------------------------------------    -------------------
 
@@ -244,11 +244,11 @@ Slack (MET) :             6.105ns  (required time - arrival time)
                                                      -0.443    14.742    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram
   -------------------------------------------------------------------
                          required time                         14.742    
-                         arrival time                          -8.637    
+                         arrival time                          -8.982    
   -------------------------------------------------------------------
-                         slack                                  6.105    
+                         slack                                  5.761    
 
-Slack (MET) :             6.246ns  (required time - arrival time)
+Slack (MET) :             5.901ns  (required time - arrival time)
   Source:                 pwm_mod/PWM_ramp_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ENARDEN
@@ -256,7 +256,7 @@ Slack (MET) :             6.246ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        3.270ns  (logic 1.154ns (35.293%)  route 2.116ns (64.707%))
+  Data Path Delay:        3.615ns  (logic 1.152ns (31.870%)  route 2.463ns (68.130%))
   Logic Levels:           2  (LUT4=2)
   Clock Path Skew:        -0.006ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.964ns = ( 14.964 - 10.000 ) 
@@ -281,11 +281,11 @@ Slack (MET) :             6.246ns  (required time - arrival time)
     SLICE_X10Y137        FDRE                                         r  pwm_mod/PWM_ramp_reg[2]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X10Y137        FDRE (Prop_fdre_C_Q)         0.478     5.707 r  pwm_mod/PWM_ramp_reg[2]/Q
-                         net (fo=9, routed)           0.875     6.583    pwm_mod/PWM_ramp_reg__0[2]
-    SLICE_X9Y137         LUT4 (Prop_lut4_I0_O)        0.323     6.906 r  pwm_mod/PWM_ramp[3]_i_1/O
-                         net (fo=5, routed)           0.907     7.813    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/pwropt_2
-    SLICE_X8Y137         LUT4 (Prop_lut4_I1_O)        0.353     8.166 r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_gate_1/O
-                         net (fo=1, routed)           0.333     8.499    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_sig_1
+                         net (fo=9, routed)           1.222     6.929    pwm_mod/PWM_ramp_reg__0[2]
+    SLICE_X9Y137         LUT4 (Prop_lut4_I0_O)        0.321     7.250 r  pwm_mod/PWM_ramp[3]_i_1/O
+                         net (fo=5, routed)           0.907     8.157    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/pwropt_2
+    SLICE_X8Y137         LUT4 (Prop_lut4_I1_O)        0.353     8.510 r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_gate_1/O
+                         net (fo=1, routed)           0.333     8.844    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_sig_1
     RAMB18_X0Y54         RAMB18E1                                     r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ENARDEN
   -------------------------------------------------------------------    -------------------
 
@@ -304,24 +304,24 @@ Slack (MET) :             6.246ns  (required time - arrival time)
                                                      -0.443    14.745    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram
   -------------------------------------------------------------------
                          required time                         14.745    
-                         arrival time                          -8.499    
+                         arrival time                          -8.844    
   -------------------------------------------------------------------
-                         slack                                  6.246    
+                         slack                                  5.901    
 
-Slack (MET) :             6.383ns  (required time - arrival time)
-  Source:                 pwm_mod/PWM_ramp_reg[1]/C
+Slack (MET) :             6.159ns  (required time - arrival time)
+  Source:                 pwm_mod/PWM_ramp_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/REGCEB
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        3.233ns  (logic 0.954ns (29.507%)  route 2.279ns (70.493%))
-  Logic Levels:           2  (LUT3=1 LUT4=1)
-  Clock Path Skew:        0.011ns (DCD - SCD + CPR)
+  Data Path Delay:        3.437ns  (logic 1.152ns (33.517%)  route 2.285ns (66.483%))
+  Logic Levels:           2  (LUT4=2)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.961ns = ( 14.961 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.227ns
-    Clock Pessimism Removal (CPR):    0.277ns
+    Source Clock Delay      (SCD):    5.229ns
+    Clock Pessimism Removal (CPR):    0.259ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -337,15 +337,15 @@ Slack (MET) :             6.383ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  CLK100MHZ_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    CLK100MHZ_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  CLK100MHZ_IBUF_BUFG_inst/O
-                         net (fo=57, routed)          1.625     5.227    pwm_mod/CLK
-    SLICE_X9Y136         FDRE                                         r  pwm_mod/PWM_ramp_reg[1]/C
+                         net (fo=57, routed)          1.627     5.229    pwm_mod/CLK
+    SLICE_X10Y137        FDRE                                         r  pwm_mod/PWM_ramp_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X9Y136         FDRE (Prop_fdre_C_Q)         0.456     5.683 r  pwm_mod/PWM_ramp_reg[1]/Q
-                         net (fo=10, routed)          0.870     6.553    pwm_mod/PWM_ramp_reg__0[1]
-    SLICE_X10Y137        LUT3 (Prop_lut3_I0_O)        0.150     6.703 r  pwm_mod/PWM_ramp[2]_i_1/O
-                         net (fo=5, routed)           0.859     7.563    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/pwropt_1
-    SLICE_X8Y137         LUT4 (Prop_lut4_I2_O)        0.348     7.911 r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_REGCEB_cooolgate_en_gate_7/O
-                         net (fo=1, routed)           0.550     8.460    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_REGCEB_cooolgate_en_sig_4
+    SLICE_X10Y137        FDRE (Prop_fdre_C_Q)         0.478     5.707 r  pwm_mod/PWM_ramp_reg[2]/Q
+                         net (fo=9, routed)           1.222     6.929    pwm_mod/PWM_ramp_reg__0[2]
+    SLICE_X9Y137         LUT4 (Prop_lut4_I0_O)        0.321     7.250 r  pwm_mod/PWM_ramp[3]_i_1/O
+                         net (fo=5, routed)           0.513     7.763    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/pwropt_2
+    SLICE_X8Y137         LUT4 (Prop_lut4_I1_O)        0.353     8.116 r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_REGCEB_cooolgate_en_gate_7/O
+                         net (fo=1, routed)           0.550     8.666    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_REGCEB_cooolgate_en_sig_4
     RAMB18_X0Y54         RAMB18E1                                     r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/REGCEB
   -------------------------------------------------------------------    -------------------
 
@@ -358,17 +358,17 @@ Slack (MET) :             6.383ns  (required time - arrival time)
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  CLK100MHZ_IBUF_BUFG_inst/O
                          net (fo=57, routed)          1.539    14.961    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
     RAMB18_X0Y54         RAMB18E1                                     r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
-                         clock pessimism              0.277    15.239    
-                         clock uncertainty           -0.035    15.203    
+                         clock pessimism              0.259    15.221    
+                         clock uncertainty           -0.035    15.185    
     RAMB18_X0Y54         RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_REGCEB)
-                                                     -0.360    14.843    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram
+                                                     -0.360    14.825    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram
   -------------------------------------------------------------------
-                         required time                         14.843    
-                         arrival time                          -8.460    
+                         required time                         14.825    
+                         arrival time                          -8.666    
   -------------------------------------------------------------------
-                         slack                                  6.383    
+                         slack                                  6.159    
 
-Slack (MET) :             6.670ns  (required time - arrival time)
+Slack (MET) :             6.323ns  (required time - arrival time)
   Source:                 pwm_mod/PWM_ramp_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/REGCEAREGCE
@@ -376,7 +376,7 @@ Slack (MET) :             6.670ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        2.929ns  (logic 0.897ns (30.625%)  route 2.032ns (69.375%))
+  Data Path Delay:        3.276ns  (logic 0.897ns (27.382%)  route 2.379ns (72.618%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Clock Path Skew:        -0.006ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.964ns = ( 14.964 - 10.000 ) 
@@ -401,11 +401,11 @@ Slack (MET) :             6.670ns  (required time - arrival time)
     SLICE_X10Y137        FDRE                                         r  pwm_mod/PWM_ramp_reg[2]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X10Y137        FDRE (Prop_fdre_C_Q)         0.478     5.707 r  pwm_mod/PWM_ramp_reg[2]/Q
-                         net (fo=9, routed)           0.875     6.583    pwm_mod/PWM_ramp_reg__0[2]
-    SLICE_X9Y137         LUT5 (Prop_lut5_I3_O)        0.295     6.878 r  pwm_mod/PWM_ramp[4]_i_1/O
-                         net (fo=5, routed)           0.825     7.702    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/pwropt_3
-    SLICE_X8Y137         LUT4 (Prop_lut4_I0_O)        0.124     7.826 r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_REGCEAREGCE_cooolgate_en_gate_5/O
-                         net (fo=1, routed)           0.332     8.158    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_REGCEAREGCE_cooolgate_en_sig_3
+                         net (fo=9, routed)           1.222     6.929    pwm_mod/PWM_ramp_reg__0[2]
+    SLICE_X9Y137         LUT5 (Prop_lut5_I3_O)        0.295     7.224 r  pwm_mod/PWM_ramp[4]_i_1/O
+                         net (fo=5, routed)           0.825     8.049    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/pwropt_3
+    SLICE_X8Y137         LUT4 (Prop_lut4_I0_O)        0.124     8.173 r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_REGCEAREGCE_cooolgate_en_gate_5/O
+                         net (fo=1, routed)           0.332     8.505    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_REGCEAREGCE_cooolgate_en_sig_3
     RAMB18_X0Y54         RAMB18E1                                     r  bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/REGCEAREGCE
   -------------------------------------------------------------------    -------------------
 
@@ -424,9 +424,9 @@ Slack (MET) :             6.670ns  (required time - arrival time)
                                                      -0.360    14.828    bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram
   -------------------------------------------------------------------
                          required time                         14.828    
-                         arrival time                          -8.158    
+                         arrival time                          -8.505    
   -------------------------------------------------------------------
-                         slack                                  6.670    
+                         slack                                  6.323    
 
 Slack (MET) :             6.801ns  (required time - arrival time)
   Source:                 clkdiv_reg[7]/C

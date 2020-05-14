@@ -30,20 +30,23 @@ module arpeggiator(
     output [2:0] LED
     );
     
+    
    // Arpeggiator Function
    reg [2:0] note =0;
    reg [25:0] note_switch =0;
    reg [10:0]f_base;
+   
+   assign LED = note;
     
    // Memory IO
    reg ena = 1;
    reg wea = 0;
-   reg [7:0] addra=0;
+   reg [5:0] addra=0;
    reg [10:0] dina=0; //We're not putting data in, so we can leave this unassigned
    wire [10:0] douta;
    
    // Instantiate block memory 
-   blk_mem_gen_0 bram (
+   blk_mem_gen_1 bram (
      .clka(CLK100MHZ),    // input wire clka
      .ena(ena),      // input wire ena
      .wea(wea),      // input wire [0 : 0] wea
@@ -66,10 +69,46 @@ module arpeggiator(
    );
    
     reg [12:0] clkdiv = 0;
+    reg [1:0] phase = 0;
+    
+    function [1:0] determineAddra ; // Determine which address to play according to state of the phase
+        input [1:0] phasein;
+        case (phasein)
+                   
+            2'b00: begin
+                addra = addra +1;
+                if(addra>=62) phase=phase+1'b1;
+            end
+            
+            2'b01: begin
+                addra = addra -1;
+                if(addra==1) phase=phase+1'b1;
+            end
+            
+            2'b10: begin
+                addra = addra +1;
+                if(addra>=62) phase=phase+1'b1;
+            end
+            
+            2'b11: begin
+                addra = addra -1;
+                if(addra==1) phase=phase+1'b1;
+            end
+          
+          endcase
+    endfunction
    
    always @(posedge CLK100MHZ) begin   
    
-        PWM <= douta; // tie memory output to the PWM input
+//        PWM <= douta; // tie memory output to the PWM input
+
+        case(phase)
+            2'b00: PWM <= douta;
+            2'b01: PWM <= douta;
+            2'b10: PWM <= ~douta;
+            2'b11: PWM <= ~douta;        
+        endcase
+    
         clkdiv <= clkdiv + 1;
         
         f_base[10:0] <= 1493 + {3'b000,SW[7:0]};
@@ -94,35 +133,35 @@ module arpeggiator(
             0: begin
                 if (clkdiv >= f_base) begin
                     clkdiv[12:0] <= 0;
-                    addra <= addra +1;
+                    determineAddra(phase);
                 end                              
             end
             
             1: begin
                 if (clkdiv >= f_base/5*4) begin
                     clkdiv[12:0] <= 0;
-                    addra <= addra +1;
+                    determineAddra(phase);
                 end            
             end 
             
             2: begin
                 if (clkdiv >= f_base/3*2) begin
                     clkdiv[12:0] <= 0;
-                    addra <= addra +1;
+                    determineAddra(phase);
                 end            
             end
             
             3: begin
                 if (clkdiv >= f_base/2) begin
                     clkdiv[12:0] <= 0;
-                    addra <= addra +1;
+                    determineAddra(phase);
                 end            
             end
             
             4: begin
                 if (clkdiv >= 1493) begin
                     clkdiv[12:0] <= 0;
-                    addra <= addra +1;
+                    determineAddra(phase);
                 end                              
             end
             
@@ -130,7 +169,7 @@ module arpeggiator(
             default: begin
                 if (clkdiv >= 1493) begin
                     clkdiv[12:0] <= 0;
-                    addra <= addra +1;
+                    determineAddra(phase);
                 end                              
             end
         

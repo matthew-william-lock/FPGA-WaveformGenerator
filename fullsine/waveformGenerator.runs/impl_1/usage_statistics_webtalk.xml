@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Apr 22 15:52:29 2020'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Thu May 14 12:26:13 2020'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1909853" description="" />
-  <keyValuePair key="date_generated" value="Wed Apr 22 15:52:29 2020" description="" />
+  <keyValuePair key="date_generated" value="Thu May 14 12:26:13 2020" description="" />
   <keyValuePair key="os_platform" value="LIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2017.2 (64-bit)" description="" />
   <keyValuePair key="project_id" value="dbb62db1838a4d24ad916fb87cd20dbe" description="" />
-  <keyValuePair key="project_iteration" value="18" description="" />
+  <keyValuePair key="project_iteration" value="19" description="" />
   <keyValuePair key="random_id" value="61e919c7602253ffae6fa3b1612265ec" description="" />
   <keyValuePair key="registration_id" value="61e919c7602253ffae6fa3b1612265ec" description="" />
   <keyValuePair key="route_design" value="TRUE" description="" />
@@ -20,9 +20,9 @@
  </section>
  <section name="user_environment" level="1" order="2" description="">
   <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz" description="" />
-  <keyValuePair key="cpu_speed" value="2683.124 MHz" description="" />
+  <keyValuePair key="cpu_speed" value="1149.738 MHz" description="" />
   <keyValuePair key="os_name" value="Ubuntu" description="" />
-  <keyValuePair key="os_release" value="Ubuntu 18.04.3 LTS" description="" />
+  <keyValuePair key="os_release" value="Ubuntu 18.04.4 LTS" description="" />
   <keyValuePair key="system_ram" value="8.000 GB" description="" />
   <keyValuePair key="total_processors" value="1" description="" />
  </section>
@@ -203,7 +203,7 @@
    <keyValuePair key="devstatic" value="0.097102" description="" />
    <keyValuePair key="die" value="xc7a100tcsg324-1" description="" />
    <keyValuePair key="dsp_output_toggle" value="12.500000" description="" />
-   <keyValuePair key="dynamic" value="0.001335" description="" />
+   <keyValuePair key="dynamic" value="0.001334" description="" />
    <keyValuePair key="effective_thetaja" value="4.6" description="" />
    <keyValuePair key="enable_probability" value="0.990000" description="" />
    <keyValuePair key="family" value="artix7" description="" />
@@ -213,7 +213,7 @@
    <keyValuePair key="i/o" value="0.000097" description="" />
    <keyValuePair key="input_toggle" value="12.500000" description="" />
    <keyValuePair key="junction_temp" value="25.4 (C)" description="" />
-   <keyValuePair key="logic" value="0.000215" description="" />
+   <keyValuePair key="logic" value="0.000212" description="" />
    <keyValuePair key="mgtavcc_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="mgtavcc_static_current" value="0.000000" description="" />
    <keyValuePair key="mgtavcc_total_current" value="0.000000" description="" />
@@ -224,12 +224,12 @@
    <keyValuePair key="mgtavtt_voltage" value="1.200000" description="" />
    <keyValuePair key="netlist_net_matched" value="NA" description="" />
    <keyValuePair key="off-chip_power" value="0.000000" description="" />
-   <keyValuePair key="on-chip_power" value="0.098437" description="" />
+   <keyValuePair key="on-chip_power" value="0.098435" description="" />
    <keyValuePair key="output_enable" value="1.000000" description="" />
    <keyValuePair key="output_load" value="5.000000" description="" />
    <keyValuePair key="output_toggle" value="12.500000" description="" />
    <keyValuePair key="package" value="csg324" description="" />
-   <keyValuePair key="pct_clock_constrained" value="1.120000" description="" />
+   <keyValuePair key="pct_clock_constrained" value="0.990000" description="" />
    <keyValuePair key="pct_inputs_defined" value="100" description="" />
    <keyValuePair key="platform" value="lin64" description="" />
    <keyValuePair key="process" value="typical" description="" />
@@ -238,7 +238,7 @@
    <keyValuePair key="read_saif" value="False" description="" />
    <keyValuePair key="set/reset_probability" value="0.000000" description="" />
    <keyValuePair key="signal_rate" value="False" description="" />
-   <keyValuePair key="signals" value="0.000161" description="" />
+   <keyValuePair key="signals" value="0.000162" description="" />
    <keyValuePair key="simulation_file" value="None" description="" />
    <keyValuePair key="speedgrade" value="-1" description="" />
    <keyValuePair key="static_prob" value="False" description="" />
@@ -267,9 +267,9 @@
    <keyValuePair key="vccbram_static_current" value="0.000256" description="" />
    <keyValuePair key="vccbram_total_current" value="0.000266" description="" />
    <keyValuePair key="vccbram_voltage" value="1.000000" description="" />
-   <keyValuePair key="vccint_dynamic_current" value="0.001293" description="" />
+   <keyValuePair key="vccint_dynamic_current" value="0.001291" description="" />
    <keyValuePair key="vccint_static_current" value="0.014995" description="" />
-   <keyValuePair key="vccint_total_current" value="0.016288" description="" />
+   <keyValuePair key="vccint_total_current" value="0.016286" description="" />
    <keyValuePair key="vccint_voltage" value="1.000000" description="" />
    <keyValuePair key="vcco12_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="vcco12_static_current" value="0.000000" description="" />
@@ -412,8 +412,6 @@
    <keyValuePair key="lut6_used" value="10" description="" />
    <keyValuePair key="obuf_functional_category" value="IO" description="" />
    <keyValuePair key="obuf_used" value="2" description="" />
-   <keyValuePair key="obuft_functional_category" value="IO" description="" />
-   <keyValuePair key="obuft_used" value="3" description="" />
    <keyValuePair key="ramb18e1_functional_category" value="Block Memory" description="" />
    <keyValuePair key="ramb18e1_used" value="1" description="" />
   </section>
@@ -529,7 +527,7 @@
  </section>
  <section name="router" level="1" order="9" description="">
   <section name="usage" level="2" order="1" description="">
-   <keyValuePair key="actual_expansions" value="201182" description="" />
+   <keyValuePair key="actual_expansions" value="201146" description="" />
    <keyValuePair key="bogomips" value="5199" description="" />
    <keyValuePair key="bram18" value="1" description="" />
    <keyValuePair key="bram36" value="0" description="" />
@@ -543,11 +541,11 @@
    <keyValuePair key="ff" value="55" description="" />
    <keyValuePair key="global_clocks" value="1" description="" />
    <keyValuePair key="high_fanout_nets" value="0" description="" />
-   <keyValuePair key="iob" value="6" description="" />
+   <keyValuePair key="iob" value="3" description="" />
    <keyValuePair key="lut" value="34" description="" />
-   <keyValuePair key="movable_instances" value="119" description="" />
-   <keyValuePair key="nets" value="142" description="" />
-   <keyValuePair key="pins" value="740" description="" />
+   <keyValuePair key="movable_instances" value="116" description="" />
+   <keyValuePair key="nets" value="139" description="" />
+   <keyValuePair key="pins" value="731" description="" />
    <keyValuePair key="pll" value="0" description="" />
    <keyValuePair key="router_runtime" value="0.000000" description="" />
    <keyValuePair key="router_timing_driven" value="1" description="" />
@@ -593,7 +591,7 @@
    <keyValuePair key="-verilog_define" value="default::[not_specified]" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="elapsed" value="00:00:17s" description="" />
+   <keyValuePair key="elapsed" value="00:00:16s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
    <keyValuePair key="memory_gain" value="469.559MB" description="" />
    <keyValuePair key="memory_peak" value="1575.445MB" description="" />
@@ -618,7 +616,6 @@
    <keyValuePair key="lut5" value="3" description="" />
    <keyValuePair key="lut6" value="10" description="" />
    <keyValuePair key="obuf" value="2" description="" />
-   <keyValuePair key="obuft" value="3" description="" />
    <keyValuePair key="ramb18e1" value="1" description="" />
    <keyValuePair key="vcc" value="3" description="" />
   </section>
@@ -635,7 +632,6 @@
    <keyValuePair key="lut5" value="3" description="" />
    <keyValuePair key="lut6" value="10" description="" />
    <keyValuePair key="obuf" value="2" description="" />
-   <keyValuePair key="obuft" value="3" description="" />
    <keyValuePair key="ramb18e1" value="1" description="" />
    <keyValuePair key="vcc" value="3" description="" />
   </section>
@@ -643,29 +639,32 @@
  <section name="vivado_usage" level="1" order="13" description="">
   <section name="java_command_handlers" level="2" order="1" description="">
    <keyValuePair key="addsources" value="5" description="" />
-   <keyValuePair key="autoconnecttarget" value="2" description="" />
+   <keyValuePair key="autoconnecttarget" value="5" description="" />
+   <keyValuePair key="closeproject" value="3" description="" />
    <keyValuePair key="coreview" value="1" description="" />
    <keyValuePair key="createblockdesign" value="1" description="" />
    <keyValuePair key="customizecore" value="2" description="" />
-   <keyValuePair key="editundo" value="15" description="" />
-   <keyValuePair key="launchprogramfpga" value="16" description="" />
+   <keyValuePair key="editundo" value="17" description="" />
+   <keyValuePair key="launchprogramfpga" value="22" description="" />
    <keyValuePair key="newproject" value="1" description="" />
-   <keyValuePair key="openhardwaremanager" value="18" description="" />
-   <keyValuePair key="programdevice" value="17" description="" />
+   <keyValuePair key="openhardwaremanager" value="31" description="" />
+   <keyValuePair key="openproject" value="4" description="" />
+   <keyValuePair key="openrecenttarget" value="3" description="" />
+   <keyValuePair key="programdevice" value="26" description="" />
    <keyValuePair key="recustomizecore" value="6" description="" />
-   <keyValuePair key="runbitgen" value="28" description="" />
+   <keyValuePair key="runbitgen" value="32" description="" />
    <keyValuePair key="runimplementation" value="2" description="" />
    <keyValuePair key="runsynthesis" value="1" description="" />
    <keyValuePair key="savefileproxyhandler" value="3" description="" />
    <keyValuePair key="settopnode" value="1" description="" />
-   <keyValuePair key="showview" value="8" description="" />
+   <keyValuePair key="showview" value="10" description="" />
    <keyValuePair key="simulationrelaunch" value="21" description="" />
-   <keyValuePair key="simulationrun" value="19" description="" />
+   <keyValuePair key="simulationrun" value="21" description="" />
    <keyValuePair key="toolssettings" value="3" description="" />
-   <keyValuePair key="viewtaskprojectmanager" value="1" description="" />
+   <keyValuePair key="viewtaskprojectmanager" value="3" description="" />
   </section>
   <section name="other_data" level="2" order="2" description="">
-   <keyValuePair key="guimode" value="2" description="" />
+   <keyValuePair key="guimode" value="25" description="" />
   </section>
   <section name="project_data" level="2" order="3" description="">
    <keyValuePair key="constraintsetcount" value="1" description="" />
@@ -688,7 +687,7 @@
    <keyValuePair key="launch_simulation_questa" value="0" description="" />
    <keyValuePair key="launch_simulation_riviera" value="0" description="" />
    <keyValuePair key="launch_simulation_vcs" value="0" description="" />
-   <keyValuePair key="launch_simulation_xsim" value="58" description="" />
+   <keyValuePair key="launch_simulation_xsim" value="60" description="" />
    <keyValuePair key="simulator_language" value="Mixed" description="" />
    <keyValuePair key="srcsetcount" value="3" description="" />
    <keyValuePair key="synthesisstrategy" value="Vivado Synthesis Defaults" description="" />
@@ -700,7 +699,7 @@
  </section>
  <section name="xsim" level="1" order="14" description="">
   <section name="command_line_options" level="2" order="1" description="">
-   <keyValuePair key="-sim_mode" value="behavioral" description="" />
+   <keyValuePair key="-sim_mode" value="default::behavioral" description="" />
    <keyValuePair key="-sim_type" value="default::" description="" />
   </section>
  </section>

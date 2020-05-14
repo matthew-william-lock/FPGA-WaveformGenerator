@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date         : Fri Apr 24 16:16:42 2020
-| Host         : linux running 64-bit Ubuntu 18.04.3 LTS
+| Date         : Thu May 14 15:41:03 2020
+| Host         : linux running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_control_sets -verbose -file quartsine_control_sets_placed.rpt
 | Design       : quartsine
 | Device       : xc7a100t
@@ -23,7 +23,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |     4 |
-| Unused register locations in slices containing registers |    17 |
+| Unused register locations in slices containing registers |    16 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,10 +33,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              25 |            7 |
+| No           | No                    | No                     |              26 |            7 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              13 |            4 |
-| Yes          | No                    | No                     |              17 |            4 |
+| Yes          | No                    | No                     |              17 |            5 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -48,10 +48,10 @@ Table of Contents
 +----------------------+-----------------------------+-------------------+------------------+----------------+
 |     Clock Signal     |        Enable Signal        |  Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------------+-----------------------------+-------------------+------------------+----------------+
-|  CLK100MHZ_IBUF_BUFG | clkdiv[0]_i_1_n_0           |                   |                2 |              6 |
-|  CLK100MHZ_IBUF_BUFG | pwm_mod/new_pwm[10]_i_1_n_0 |                   |                2 |             11 |
+|  CLK100MHZ_IBUF_BUFG | addra                       |                   |                2 |              6 |
+|  CLK100MHZ_IBUF_BUFG | pwm_mod/new_pwm[10]_i_1_n_0 |                   |                3 |             11 |
 |  CLK100MHZ_IBUF_BUFG |                             | clkdiv[0]_i_1_n_0 |                4 |             13 |
-|  CLK100MHZ_IBUF_BUFG |                             |                   |                7 |             25 |
+|  CLK100MHZ_IBUF_BUFG |                             |                   |                7 |             26 |
 +----------------------+-----------------------------+-------------------+------------------+----------------+
 
 

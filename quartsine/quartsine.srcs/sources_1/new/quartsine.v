@@ -22,11 +22,8 @@
 
 module quartsine(
     input  CLK100MHZ,
-    input [7:0] SW,
-    input BTNL,
     output AUD_PWM, 
-    output AUD_SD,
-    output [2:0] LED
+    output AUD_SD
     );
     
     // Memory IO
@@ -61,6 +58,7 @@ module quartsine(
    
     reg [12:0] clkdiv = 0;
     reg [1:0] phase = 0;
+    reg [0:0] rep = 0;
    
    always @(posedge CLK100MHZ) begin   
    
@@ -79,23 +77,63 @@ module quartsine(
           case (phase)
            
             2'b00: begin
-                addra <= addra +1;
-                if(addra>=62) phase<=phase+1'b1;
+            
+                if (!rep) addra <= addra +1;
+                if(addra>=62) begin
+                    if (!rep) begin
+                        rep<=1'b1;
+                    end
+                    else begin
+                        phase<=phase+1'b1;
+                        rep<=1'b0;
+                    end
+                end                
+                 
             end
             
             2'b01: begin
-                addra <= addra -1;
-                if(addra==1) phase<=phase+1'b1;
+                
+                if (!rep) addra <= addra -1;
+                if(addra<=1) begin
+                    if (!rep) begin
+                        rep<=1'b1;
+                    end
+                    else begin
+                        phase<=phase+1'b1;
+                        rep<=1'b0;
+                    end
+                end 
+                
             end
             
             2'b10: begin
-                addra <= addra +1;
-                if(addra>=62) phase<=phase+1'b1;
+                
+                if (!rep) addra <= addra +1;
+                if(addra>=62) begin
+                    if (!rep) begin
+                        rep<=1'b1;
+                    end
+                    else begin
+                        phase<=phase+1'b1;
+                        rep<=1'b0;
+                    end
+                end 
+                
             end
             
             2'b11: begin
-                addra <= addra -1;
-                if(addra==1) phase<=phase+1'b1;
+            
+            if (!rep) addra <= addra -1;
+                if(addra<=1) begin
+                    if (!rep) begin
+                        rep<=1'b1;
+                    end
+                    else begin
+                        phase<=phase+1'b1;
+                        rep<=1'b0;
+                    end
+                end 
+            
             end
           
           endcase

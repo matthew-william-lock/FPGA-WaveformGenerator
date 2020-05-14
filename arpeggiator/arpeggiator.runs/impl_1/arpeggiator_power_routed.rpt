@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date             : Tue May 12 20:27:08 2020
+| Date             : Thu May 14 12:11:37 2020
 | Host             : linux running 64-bit Ubuntu 18.04.4 LTS
 | Command          : report_power -file arpeggiator_power_routed.rpt -pb arpeggiator_power_summary_routed.pb -rpx arpeggiator_power_routed.rpx
 | Design           : arpeggiator
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.101 |
+| Total On-Chip Power (W)  | 0.102 |
 | Dynamic (W)              | 0.004 |
 | Device Static (W)        | 0.097 |
 | Effective TJA (C/W)      | 4.6   |
@@ -50,16 +50,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.001 |      347 |       --- |             --- |
-|   LUT as Logic |     0.001 |      147 |     63400 |            0.23 |
+| Slice Logic    |     0.001 |      363 |       --- |             --- |
+|   LUT as Logic |     0.001 |      157 |     63400 |            0.25 |
 |   CARRY4       |    <0.001 |       41 |     15850 |            0.26 |
 |   Register     |    <0.001 |       94 |    126800 |            0.07 |
 |   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |     0.001 |      260 |       --- |             --- |
+| Signals        |     0.001 |      265 |       --- |             --- |
 | Block RAM      |    <0.001 |      0.5 |       135 |            0.37 |
 | I/O            |    <0.001 |       15 |       210 |            7.14 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.101 |          |           |                 |
+| Total          |     0.102 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 

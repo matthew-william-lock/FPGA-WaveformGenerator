@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date         : Wed Apr 22 15:51:39 2020
-| Host         : linux running 64-bit Ubuntu 18.04.3 LTS
+| Date         : Thu May 14 12:25:24 2020
+| Host         : linux running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_utilization -file waveformGen_utilization_synth.rpt -pb waveformGen_utilization_synth.pb
 | Design       : waveformGen
 | Device       : 7a100tcsg324-1
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    6 |     0 |       210 |  2.86 |
+| Bonded IOB                  |    3 |     0 |       210 |  1.43 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -153,7 +153,6 @@ Table of Contents
 | LUT2     |    6 |                 LUT |
 | CARRY4   |    6 |          CarryLogic |
 | LUT3     |    4 |                 LUT |
-| OBUFT    |    3 |                  IO |
 | LUT5     |    3 |                 LUT |
 | OBUF     |    2 |                  IO |
 | IBUF     |    1 |                  IO |

@@ -27,7 +27,7 @@ module arpeggiator_tb;
     reg BTNL;
     wire AUD_PWM; 
     wire AUD_SD;
-    wire [2:0] LED;
+    wire [1:0] LED;
     
     arpeggiator arp (
         .CLK100MHZ(CLK100MHZ),
@@ -40,7 +40,7 @@ module arpeggiator_tb;
     
     wire [1:0] note;
     wire [25:0] note_switch;   
-    wire [7:0] addra;
+    wire [5:0] addra;
     
     assign note = arp.note;
     assign note_switch=arp.note_switch;

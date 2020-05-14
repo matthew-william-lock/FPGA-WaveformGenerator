@@ -52,15 +52,15 @@ set rc [catch {
   set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.cache/wt [current_project]
-  set_property parent.project_path /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.xpr [current_project]
-  set_property ip_output_repo /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.cache/wt [current_project]
+  set_property parent.project_path /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.xpr [current_project]
+  set_property ip_output_repo /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.runs/synth_1/waveformGen.dcp
-  read_ip -quiet /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-  set_property is_locked true [get_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
-  read_xdc /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/constrs_1/new/constraints.xdc
+  add_files -quiet /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.runs/synth_1/waveformGen.dcp
+  read_ip -quiet /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  set_property is_locked true [get_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+  read_xdc /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/constrs_1/new/constraints.xdc
   link_design -top waveformGen -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

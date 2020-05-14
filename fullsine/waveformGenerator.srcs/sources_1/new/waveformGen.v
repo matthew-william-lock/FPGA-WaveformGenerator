@@ -22,11 +22,8 @@
 
 module waveformGen(
     input  CLK100MHZ,
-    input [7:0] SW,
-    input BTNL,
     output AUD_PWM, 
-    output AUD_SD,
-    output [2:0] LED
+    output AUD_SD
     );
     
     // Memory IO

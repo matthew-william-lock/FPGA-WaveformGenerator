@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date             : Wed Apr 22 15:52:22 2020
-| Host             : linux running 64-bit Ubuntu 18.04.3 LTS
+| Date             : Thu May 14 12:26:06 2020
+| Host             : linux running 64-bit Ubuntu 18.04.4 LTS
 | Command          : report_power -file waveformGen_power_routed.rpt -pb waveformGen_power_summary_routed.pb -rpx waveformGen_power_routed.rpx
 | Design           : waveformGen
 | Device           : xc7a100tcsg324-1
@@ -57,7 +57,7 @@ Table of Contents
 |   Others       |     0.000 |        6 |       --- |             --- |
 | Signals        |    <0.001 |       86 |       --- |             --- |
 | Block RAM      |    <0.001 |      0.5 |       135 |            0.37 |
-| I/O            |    <0.001 |        6 |       210 |            2.86 |
+| I/O            |    <0.001 |        3 |       210 |            1.43 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.098 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

@@ -9,22 +9,22 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.cache/wt [current_project]
-set_property parent.project_path /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.xpr [current_project]
+set_property webtalk.parent_dir /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.cache/wt [current_project]
+set_property parent.project_path /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.xpr [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project]
-set_property ip_output_repo /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.cache/ip [current_project]
+set_property ip_output_repo /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/init_files/LUT_sinefull.coe
+add_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/init_files/LUT_sinefull.coe
 read_verilog -library xil_defaultlib {
-  /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/PWM.v
-  /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/new/waveformGen.v
+  /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/PWM.v
+  /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/new/waveformGen.v
 }
-read_ip -quiet /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-set_property is_locked true [get_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+read_ip -quiet /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+set_property is_locked true [get_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -34,8 +34,8 @@ set_property is_locked true [get_files /home/matthew/Matthew/UCT/2020/Embedded3/
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/constrs_1/new/constraints.xdc
-set_property used_in_implementation false [get_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.srcs/constrs_1/new/constraints.xdc]
+read_xdc /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/constrs_1/new/constraints.xdc
+set_property used_in_implementation false [get_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.srcs/constrs_1/new/constraints.xdc]
 
 
 synth_design -top waveformGen -part xc7a100tcsg324-1

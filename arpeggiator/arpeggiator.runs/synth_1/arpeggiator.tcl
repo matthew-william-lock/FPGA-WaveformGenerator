@@ -18,13 +18,14 @@ set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project
 set_property ip_output_repo /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/arpeggiator/arpeggiator.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 add_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/init_files/LUT_sinefull.coe
+add_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/quartsine/init_files/LUT_sinefull.coe
 read_verilog -library xil_defaultlib {
   /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/arpeggiator/arpeggiator.srcs/sources_1/new/PWM.v
   /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/arpeggiator/arpeggiator.srcs/sources_1/new/arpeggiator.v
 }
-read_ip -quiet /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/arpeggiator/arpeggiator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/arpeggiator/arpeggiator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-set_property is_locked true [get_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/arpeggiator/arpeggiator.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+read_ip -quiet /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/arpeggiator/arpeggiator.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+set_property used_in_implementation false [get_files -all /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/arpeggiator/arpeggiator.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
+set_property is_locked true [get_files /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/arpeggiator/arpeggiator.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

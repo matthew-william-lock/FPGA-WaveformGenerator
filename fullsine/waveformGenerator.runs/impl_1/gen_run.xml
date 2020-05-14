@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1587563473">
-  <File Type="PA-TCL" Name="waveformGen.tcl"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="waveformGen_postplace_pwropt.dcp"/>
-  <File Type="INIT-TIMING" Name="waveformGen_timing_summary_init.rpt"/>
-  <File Type="OPT-DCP" Name="waveformGen_opt.dcp"/>
-  <File Type="OPT-DRC" Name="waveformGen_drc_opted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="waveformGen_methodology_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="waveformGen.hwdef"/>
-  <File Type="OPT-TIMING" Name="waveformGen_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="waveformGen_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="waveformGen_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="waveformGen_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="waveformGen_placed.dcp"/>
-  <File Type="PLACE-IO" Name="waveformGen_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="waveformGen_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="waveformGen_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="waveformGen_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="waveformGen_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="waveformGen_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="waveformGen_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="waveformGen_timing_summary_placed.rpt"/>
-  <File Type="RDI-RDI" Name="waveformGen.vdi"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="waveformGen_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="waveformGen_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="waveformGen_drc_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="waveformGen_postroute_physopt.dcp"/>
-  <File Type="BG-BIT" Name="waveformGen.bit"/>
-  <File Type="ROUTE-DCP" Name="waveformGen_routed.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="waveformGen_timing_summary_postroute_physopted.pb"/>
-  <File Type="BG-BIN" Name="waveformGen.bin"/>
-  <File Type="ROUTE-TIMING-PB" Name="waveformGen_timing_summary_routed.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="waveformGen_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BITSTR-MSK" Name="waveformGen.msk"/>
-  <File Type="ROUTE-TIMING-RPX" Name="waveformGen_timing_summary_routed.rpx"/>
-  <File Type="BITSTR-RBT" Name="waveformGen.rbt"/>
-  <File Type="ROUTE-SIMILARITY" Name="waveformGen_incremental_reuse_routed.rpt"/>
-  <File Type="BITSTR-NKY" Name="waveformGen.nky"/>
-  <File Type="ROUTE-CLK" Name="waveformGen_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="waveformGen_postroute_physopt_bb.dcp"/>
-  <File Type="BG-DRC" Name="waveformGen.drc"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="waveformGen_routed_bb.dcp"/>
-  <File Type="BITSTR-MMI" Name="waveformGen.mmi"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1589451897">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="waveformGen_timing_summary_postroute_physopted.rpt"/>
+  <File Type="BG-DRC" Name="waveformGen.drc"/>
   <File Type="BG-BGN" Name="waveformGen.bgn"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="waveformGen_timing_summary_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="waveformGen.sysdef"/>
+  <File Type="BITSTR-MMI" Name="waveformGen.mmi"/>
   <File Type="BITSTR-BMM" Name="waveformGen_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="waveformGen.nky"/>
+  <File Type="BITSTR-RBT" Name="waveformGen.rbt"/>
+  <File Type="BITSTR-MSK" Name="waveformGen.msk"/>
+  <File Type="BG-BIN" Name="waveformGen.bin"/>
+  <File Type="BG-BIT" Name="waveformGen.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="waveformGen_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="waveformGen_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="waveformGen_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="waveformGen_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="waveformGen_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="waveformGen_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="waveformGen_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="waveformGen_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="waveformGen_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="waveformGen_timing_summary_routed.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="waveformGen_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="waveformGen_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="waveformGen_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="waveformGen_power_summary_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="waveformGen_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-PWR" Name="waveformGen_power_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="waveformGen_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="waveformGen_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-PB" Name="waveformGen_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="waveformGen_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="waveformGen_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="waveformGen_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="waveformGen_drc_routed.pb"/>
   <File Type="ROUTE-DRC" Name="waveformGen_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="waveformGen_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="waveformGen_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="waveformGen_routed_error.dcp"/>
   <File Type="PHYSOPT-TIMING" Name="waveformGen_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="waveformGen_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="waveformGen_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="waveformGen_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="RDI-RDI" Name="waveformGen.vdi"/>
+  <File Type="PLACE-TIMING" Name="waveformGen_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="waveformGen_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="waveformGen_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="waveformGen_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="waveformGen_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="waveformGen_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="waveformGen_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="waveformGen_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="waveformGen_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="waveformGen_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="waveformGen_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="waveformGen_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="waveformGen_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="waveformGen.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="waveformGen_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="waveformGen_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="waveformGen_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="waveformGen_timing_summary_init.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="waveformGen_postplace_pwropt.dcp"/>
+  <File Type="PA-TCL" Name="waveformGen.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/PWM.v">

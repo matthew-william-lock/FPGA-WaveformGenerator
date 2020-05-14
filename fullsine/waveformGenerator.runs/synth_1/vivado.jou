@@ -2,11 +2,11 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed Apr 22 15:51:13 2020
-# Process ID: 32555
-# Current directory: /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.runs/synth_1
+# Start of session at: Thu May 14 12:24:58 2020
+# Process ID: 22610
+# Current directory: /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.runs/synth_1
 # Command line: vivado -log waveformGen.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source waveformGen.tcl
-# Log file: /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.runs/synth_1/waveformGen.vds
-# Journal file: /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/waveformGenerator.runs/synth_1/vivado.jou
+# Log file: /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.runs/synth_1/waveformGen.vds
+# Journal file: /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/fullsine/waveformGenerator.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source waveformGen.tcl -notrace
