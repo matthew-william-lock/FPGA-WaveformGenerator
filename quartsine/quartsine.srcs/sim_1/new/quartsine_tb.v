@@ -33,6 +33,7 @@ module quartsin_tb;
      wire [1:0] phase;
      wire [12:0] clkdiv;
      wire [0:0] rep;
+     wire [10:0] douta;
      
     
     
@@ -47,6 +48,7 @@ module quartsin_tb;
     assign phase=quart.phase;
     assign clkdiv=quart.clkdiv;    
     assign rep = quart.rep;
+    assign douta=quart.PWM;
         
     
     initial begin

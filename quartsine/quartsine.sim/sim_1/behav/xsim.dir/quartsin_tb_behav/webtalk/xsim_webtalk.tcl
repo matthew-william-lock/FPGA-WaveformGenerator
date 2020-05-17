@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/quartsine/quartsine.sim/sim_1/behav/xsim.dir/quartsin_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Thu May 14 15:38:49 2020" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun May 17 10:18:28 2020" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "1909853" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,11 +14,11 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "61e919c7602253ffae6fa3b1612265ec" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "42b3c4f40ab1414798c056b79a1ac5fd" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "6" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "2" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Ubuntu" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "Ubuntu 18.04.4 LTS" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "2591.786 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "2697.035 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
@@ -33,10 +33,10 @@ webtalk_add_data -client xsim -key Debug -value "typical" -context "xsim\\comman
 webtalk_add_data -client xsim -key Simulation_Image_Code -value "129 KB" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Image_Data -value "13 KB" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Total_Processes -value "211" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Total_Processes -value "212" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "10" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip unimacro_ver unisims_ver " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "0.64_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Memory -value "217904_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1130199093 -regid "" -xml /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/quartsine/quartsine.sim/sim_1/behav/xsim.dir/quartsin_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/quartsine/quartsine.sim/sim_1/behav/xsim.dir/quartsin_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/quartsine/quartsine.sim/sim_1/behav/xsim.dir/quartsin_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Compiler_Time -value "0.58_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Memory -value "217928_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 3542460277 -regid "" -xml /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/quartsine/quartsine.sim/sim_1/behav/xsim.dir/quartsin_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/quartsine/quartsine.sim/sim_1/behav/xsim.dir/quartsin_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/matthew/Matthew/UCT/2020/Embedded3/Embedded_Prac5/quartsine/quartsine.sim/sim_1/behav/xsim.dir/quartsin_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1589463611">
-  <File Type="VDS-TIMING-PB" Name="quartsine_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="quartsine.tcl"/>
+  <File Type="RDS-RDS" Name="quartsine.vds"/>
   <File Type="VDS-TIMINGSUMMARY" Name="quartsine_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="quartsine_timing_summary_synth.pb"/>
   <File Type="RDS-DCP" Name="quartsine.dcp"/>
   <File Type="RDS-UTIL-PB" Name="quartsine_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="quartsine_utilization_synth.rpt"/>
   <File Type="RDS-PROPCONSTRS" Name="quartsine_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="quartsine.vds"/>
-  <File Type="PA-TCL" Name="quartsine.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/pwm_mod.v">

@@ -1,7 +1,4 @@
-Running: xsim.dir/quartsin_tb_behav/xsimk -simmode gui -wdb quartsin_tb_behav.wdb -simrunnum 0 -socket 54195
+Running: xsim.dir/quartsin_tb_behav/xsimk -simmode gui -wdb quartsin_tb_behav.wdb -simrunnum 0 -socket 40545
 Design successfully loaded
 Design Loading Memory Usage: 42668 KB (Peak: 42668 KB)
 Design Loading CPU Usage: 10 ms
-Simulation completed
-Simulation Memory Usage: 128764 KB (Peak: 189940 KB)
-Simulation CPU Usage: 3270 ms
